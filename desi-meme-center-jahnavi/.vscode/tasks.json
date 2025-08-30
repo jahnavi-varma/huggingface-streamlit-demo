@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "install",
+      "type": "shell",
+      "command": "pnpm i || npm i"
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "pnpm build || npm run build"
+    },
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "pnpm lint || npm run lint || ruff check ."
+    },
+    {
+      "label": "dev",
+      "type": "shell",
+      "command": "pnpm dev || npm run dev"
+    }
+  ]
+}
